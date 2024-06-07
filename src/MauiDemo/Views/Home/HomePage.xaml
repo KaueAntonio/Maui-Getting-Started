@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:local="clr-namespace:MauiDemo.Views"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.Views.HomePage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid RowDefinitions="*,Auto">
+        <FlexLayout Grid.Row="0"
+                JustifyContent="SpaceBetween"
+                Direction="Column"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+        </FlexLayout>
+        <StackLayout Grid.Row="1"
+                     BackgroundColor="LightGray"
+                     Padding="10">
+            <FlexLayout JustifyContent="SpaceAround"
+                        HeightRequest="40">
+                <ImageButton Source="searchicon.svg" WidthRequest="40"/>
+                <ImageButton Source="homeicon.svg" WidthRequest="40"/>
+                <ImageButton Source="usericon.svg" WidthRequest="40"/>
+            </FlexLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
